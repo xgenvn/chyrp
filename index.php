@@ -44,5 +44,4 @@
     }
 
     $trigger->call("end", $route);
-
     ob_end_flush();

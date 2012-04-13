@@ -1,0 +1,89 @@
+<?php header("Status: 403"); exit("Access denied."); ?>
+---
+sql: 
+  host: "localhost"
+  username: "root"
+  password: 
+  database: "chyrpdev"
+  prefix: "ch_"
+  adapter: "mysql"
+name: "TIPI"
+description: "study, love and hate"
+url: "http://dev/chyrp"
+chyrp_url: "http://dev/chyrp"
+feed_url: 
+email: "xgenvn@gmail.com"
+locale: "en_US"
+theme: "tipi"
+admin_theme: "default"
+posts_per_page: 5
+feed_items: 20
+clean_urls: true
+post_url: "(year)/(month)/(day)/(url)/"
+timezone: "Asia/Chongqing"
+can_register: true
+email_activation: false
+enable_recaptcha: true
+default_group: 3
+guest_group: 5
+enable_trackbacking: true
+send_pingbacks: false
+enable_xmlrpc: true
+enable_ajax: true
+enable_wysiwyg: true
+uploads_path: "/uploads/"
+enabled_modules: 
+  0: "markdown"
+  1: "paging"
+  2: "read_more"
+  3: "swfupload"
+  4: "extension_manager"
+  5: "categorize"
+  6: "comments"
+  7: "theme_editor"
+  9: "tags"
+  10: "likes"
+  11: "shadowbox"
+enabled_feathers: 
+  - "text"
+  - "quote"
+  - "photo"
+  - "video"
+  - "audio"
+  - "link"
+routes: 
+  category/(name)/: "category"
+  tag/(name)/: "tag"
+secure_hashkey: "a3815ecc81ea04192bcfdfa37e6c9a2b"
+default_comment_status: "denied"
+allowed_comment_html: 
+  - "strong"
+  - "em"
+  - "blockquote"
+  - "code"
+  - "pre"
+  - "a"
+comments_per_page: 25
+akismet_api_key: 
+auto_reload_comments: 30
+enable_reload_comments: false
+allow_nested_comments: true
+cache_expire: 1800
+cache_exclude: 
+cache_memcached_hosts: 
+module_like: 
+  showOnFront: true
+  likeWithText: false
+  likeImage: "http://dev/chyrp/modules/likes/images/like.png"
+  isCacherOn: false
+  likeText: 
+    - "You like this post."
+    - "You and 1 person like this post."
+    - "You and %NUM% people like this post."
+    - "Be the first to like."
+    - "1 person likes this post."
+    - "%NUM% people like this post."
+    - "Like"
+    - "Unlike"
+module_sb: 
+  initSetup: "handleOversize:\"drag\",modal:true"

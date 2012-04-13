@@ -46,4 +46,7 @@
         public function preview($text) {
             return preg_replace("/<!--more(\(([^\)]+)\))?-->/", "<hr />", $text);
         }
+        static function add_dash($text) {
+            return preg_replace("/(<p(\s+[^>]+)?>|^)/si", "\\1&mdash; ", $text, 1);
+        }
     }

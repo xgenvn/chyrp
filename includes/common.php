@@ -20,7 +20,7 @@
 
     # Constant: DEBUG
     # Should Chyrp use debugging processes?
-    define('DEBUG', true);
+    define('DEBUG', false);
 
     # Constant: CHECK_UPDATES
     # Should Chyrp check for updates?
